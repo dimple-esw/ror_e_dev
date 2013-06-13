@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  from_user: MyString
+  from_user_id_str: MyString
+  profile_image_url: MyString
+  text: MyString
+  twitter_created_at: 2013-06-08 13:23:58
+
+two:
+  from_user: MyString
+  from_user_id_str: MyString
+  profile_image_url: MyString
+  text: MyString
+  twitter_created_at: 2013-06-08 13:23:58

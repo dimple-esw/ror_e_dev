@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @atricle.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @atricle.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_atricle_path(@atricle) %> |
+<%= link_to 'Back', atricles_path %>

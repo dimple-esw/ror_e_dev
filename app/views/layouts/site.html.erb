@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RorEcommerceDev</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+
+<div id="main">
+  <div class="admin-inner1">
+    <div class="admin-top">
+      <div class="ad-sign"><span>Welcome <%= current_user.name %>, <%= link_to "Sign Out", signout_path %></span></div>
+  <div class="ad-sign"><span><%= link_to "Click Here To Get Recenly Posted Tweets",tweets_get_tweets_path %></span></div>
+   
+      <div class="dow">   <span>  <%= link_to "10 Latest Tweets Listing With Images",tweets_index_path %> | <%=link_to "List Of Connected Users (My Followers)",tweets_get_list_of_connected_users_path %> | <%= link_to "My Profile & My Top Voted Images",user_profile_path(current_user.name)%> </span></div>
+    </div>
+    <%= yield %>
+  </div>
+</div>
+
+</body>
+</html>
+

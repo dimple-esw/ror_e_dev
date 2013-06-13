@@ -1,0 +1,50 @@
+<div class="admin-bot-lis">
+  <% if @user_photos %>
+    <table width="100%" border="0" cellpadding="7" cellspacing="0"  class="ad-table10">
+      <tr>
+        <th align="left"><a style="float:left;" title="test" href="<%=current_user.profile_image.gsub("_normal", "") rescue nil%>" rel="lightbox">
+        <img src="<%=current_user.profile_image rescue nil%>" class="blanck1"/></a></th>
+        <img src="current_user.twitter.user.profile_image_url rescue nil" class="blanck1"/>
+        <th valign="top" align="left">Name: <%= current_user.name %></th>
+        <th valign="top" colspan="2"><%= link_to "View Most Voted Image",view_most_voted_page_path%></th>
+      </tr>
+         <% @user_photos.each_with_index do |user_photo, index| %>
+         <% i= index%4 %>
+         <% if i == 0 %>      <tr> <% end %>
+        <%# @user_photos.each do |user_photo| %>
+       
+        <td valign="top" width="289">
+           <div class ="image-pro">
+           <%= link_to image_tag(user_photo.image_url, :border=>0), :class => 'blanck1 blanck2' %>  <br />
+           </div>
+             <span>Vote: <%= user_photo.vote rescue nil%></span>
+            <%= link_to "Vote Now",vote_image_path(user_photo.id), :class => "vote", :remote => true %></a>
+              <span id ="vote_data">
+               
+            </span>
+         </td>
+         <% if i == 3 %>      </tr> <% end %> 
+ <% end %>
+    </table>
+  <% end %>
+</div>
+  
+
+<script language ="javascript" type="text/javascript">
+ function getvote()
+{
+alert("hello");
+var photo_id = $('#photo_id').val();
+alert(photo_id);
+
+
+
+  var form = $("#vote_image_form"); // grab the form wrapping the search bar.
+  var url = "/vote_image"; // appointment_search action.  
+  var formData = form.serialize(); // grab the data in the form  
+  $.post(url, formData, function(html) { // perform an AJAX get
+    
+      
+  });
+}
+</script>

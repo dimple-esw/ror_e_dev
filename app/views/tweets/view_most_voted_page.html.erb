@@ -1,0 +1,19 @@
+<div class="admin-bot-lis">
+<table width="100%" border="0" cellpadding="7" cellspacing="0"  class="ad-table10">
+  <%  @user_photos.each do |user_photo| %>
+<%if user_photo.vote %>
+ <tr>
+ <td width="289">
+    <div class ="image-pro">
+           <%= link_to image_tag(user_photo.image_url, :border=>0), :class => 'blanck1' %>  <br />
+    </div>
+</td>
+<td style="align="left" valign="top"">
+  Vote:  <%= user_photo.vote rescue nil %>
+</td>
+  </tr>
+
+<% end %>
+  <% end%>
+</div>
+

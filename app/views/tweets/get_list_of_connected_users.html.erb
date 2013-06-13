@@ -1,0 +1,23 @@
+<div class="admin-page-lis"><span>List of Connected User</span></div>
+<div class="admin-bot-lis">   
+<% if @tweets %>
+  <% @tweets.each do |tweet| %>
+  <table width="100%" border="0" cellpadding="7" cellspacing="0"  class="ad-table1">
+    <tr>
+      <td width="90"><table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center"> <%= link_to image_tag(tweet.profile_image_url, :border=>0), :class => 'blanck-img' %></td>
+    </tr>
+    </table></td>
+          <td valign="top"><table border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="date"><span>Name: <em> <%= link_to tweet.from_user, "http://twitter.com/#{tweet.from_user}", :class => "username", :target => "_blank" %></em></span> </td>
+              </tr>
+            </table></td>
+      
+        </tr>
+      </table>
+     <% end %>
+<% end%>
+  <%= will_paginate @tweets %>
+</div>

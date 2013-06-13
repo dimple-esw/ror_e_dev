@@ -1,0 +1,63 @@
+body{ margin:0px; padding:0px; font-family:Arial, Helvetica, sans-serif; font-size:13px;}
+a{ text-decoration:none; color:#fff;}
+a:hover{ text-decoration:none; color:#CCCCCC;}
+#main{ margin:0 auto; padding:0px; width:1300px;}
+.home-cl{ margin:0 auto; padding:115px 0 145px; background:#3e3e3e; width:100%; text-align:center;}
+.home-cl p{ margin:0 0 24px; padding:12px 0 0; color:#FFFFFF; line-height:102px; font-size:64px;}
+.home-cl p a{ margin:0px; padding:0px; text-decoration:none; color:#FFFFFF; background:none; font-size:35px;}
+.home-cl p a:hover{ background:none;}
+.home-cl a{ margin:0px; padding:12px 15px; text-decoration:none; color:#FFFFFF; background:#262626; font-size:18px;}
+.home-cl a:hover{ margin:0px; padding:10px; background:#4c4b4b; color:#CCCCCC;}
+
+.admin-inner1{ margin:0 auto; padding:0px; width:100%;}
+.admin-top{ margin:0px; padding:10px; background:#3e3e3e; float:left; width:98%;}
+.ad-sign{ margin:0px; padding:0px; width:100%; float:left; text-align:right; }
+.ad-sign span{ margin:0px; padding:5px 8px 5px 5px; float:right; color:#FFFFFF;}
+.ad-sign span a{ margin:0px; padding:0px; text-decoration:none; color:#FFFFFF;}
+.ad-sign span a:hover{ margin:0px; padding:0px; color:#CCCCCC;}
+.dow{ margin:0px; padding:12px 0 0; float:left; width:100%;}
+.dow span{ margin:0px; padding:0px; width:100%; color:#FFFFFF; float:left; text-align:center;}
+.dow .dowspan{ text-align:left;}
+
+.admin-bot{ margin:0 auto; padding:0px; width:100%; float:left;}
+.admin-top-box{ margin:10px 0 0; padding:0px; background:#CCCCCC; height:530px;}
+.top-box1{ margin:0px; padding:5px 0 5px 15px; background:#3e3e3e;  color:#FFFFFF; font-size:14px; line-height:25px;}
+.top-box1 td{ padding:5px;}
+
+
+.admin-bot-lis{ margin:0 auto; padding:0px; width:100%; float:left;}
+.admin-page-lis{ margin:10px 0 0; padding:10px; width:98%; background:none repeat scroll 0 0 rgb(118, 117, 117); float:left;}
+.admin-page-lis span{ margin:0px; padding:0px;  color:#FFFFFF; font-size:14px;}
+.date{ margin:0px; padding:0px;}
+.date span{ margin:0px; padding:0px; color:#FFFFFF; line-height:20px; width:100%; float:left;}
+.date span em{ margin:0px; padding:0 0 0 10px; font-style:normal; color:#FFFFFF;}
+.date p{ margin:0px; padding:0px; color:#FFFFFF; width:100%; float:left;}
+table td{ color:#FFFFFF; font-size:13px;}
+table th{ color:#FFFFFF; font-size:13px; font-weight:normal;}
+.blanck-img{ margin:0px; padding:0 6px 5px 0;}
+.ad-table1{ margin:10px 0 0; padding:0px; background:#535252;}
+.ad-table1 a{ margin:0px; padding:0px; color:#FFFFFF; text-decoration:none;}
+.ad-table1 a:hover{ margin:0px; padding:0px; color:#ccc; text-decoration:none;}
+.ad-table10{ margin:10px 0 0; padding:0px; background:#535252;}
+.ad-table10 a{ margin:0 23px 0 0; padding:0px; color:#FFFFFF; text-decoration:none; float:right;}
+.ad-table10 a:hover{ margin:0 23px 0 0; padding:0px; color:#ccc; text-decoration:none;}
+.ad-table10 span{ float:left;margin-top: 11px;}
+.ad-table10 td{ padding-bottom:25px; padding-top:15px;}
+.blanck1{ padding-bottom:5px;}
+.vote{ background: none repeat scroll 0 0 rgb(38, 38, 38);
+    color: rgb(255, 255, 255);
+    float: left;
+    font-size: 13px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5px !important;
+    padding: 5px !important;
+    text-decoration: none;}
+.vote:hover{ background:#4c4b4b; color:#CCCCCC;}
+.image-pro{ margin:0 0 5px; padding:0;float:left;overflow:hidden; height:150px; width:289px;}
+.blanck2{margin-bottom:5px;}
+#vote_data{ float:left;margin-top:40px; position: relative; right: 42px;}
+
+.ad-sign1 { position: relative; padding:0px; width:100%; float:left; text-align:left; }
+
